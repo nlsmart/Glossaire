@@ -1,0 +1,58 @@
+
+SELECT lettre
+FROM liste
+ORDER BY lettre DESC
+
+
+
+
+___
+SELECT departement_id, SUM(departement_code)
+FROM departement
+GROUP BY departement_id
+
+SELECT departement_id, SUM(departement_code)
+FROM departement
+GROUP BY departement_id
+HAVING SUM(departement_code) > 40
+
+SELECT departement_code
+FROM departement
+ORDER BY departement_code DESC
+
+SELECT departement_code, departement_nom
+FROM departement
+ORDER BY departement_code ASC
+
+SELECT departement_code, departement_nom
+FROM departement
+ORDER BY departement_code DESC
+
+SELECT *
+FROM departement
+LIMIT 10
+
+SELECT *
+FROM departement
+LIMIT 10 OFFSET 5
+
+SELECT *
+FROM departement
+ORDER BY departement_code, departement_nom DESC
+
+__
+
+Table « achat »
+id 		nom 	surcharge prix_unitaire quantite
+1 	Produit A 		1.3			6 		3
+2 	Produit B 		1.5 		8 		2
+3 	Produit C 		0.75 		7		 4
+4 	Produit D 		1 			15		 2
+
+SELECT id, nom, marge_pourcentage, prix_unitaire, quantite,
+CASE
+WHEN marge_pourcentage=1 THEN 'Prix ordinaire'
+WHEN marge_pourcentage>1 THEN 'Prix supérieur à la normale'
+ELSE 'Prix inférieur à la normale'
+END
+FROM `achat`

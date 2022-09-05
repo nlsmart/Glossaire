@@ -1,0 +1,19 @@
+
+
+<div class="container mt-3">
+    <table class="table table-bordered border-primary rounded-end">
+
+        <tr>
+        <th>Mot </th>
+        <td>Agile </td>
+        <th>Modifier </th>
+        </tr>
+
+        <tr>
+        <th>Définition </th>
+        <td>Les méthodes de développement en approche agile visent la satisfaction réelle des besoins d’informatisation du client. elles l’impliquent pendant tout le développement et permettent une grande réactivité à ses demandes. </td>
+        <th>Supprimer </th>
+        </tr>
+
+    </table>
+</div>

@@ -1,0 +1,2 @@
+
+https://stackoverflow.com/questions/12525251/header-location-not-working-in-my-php-code
